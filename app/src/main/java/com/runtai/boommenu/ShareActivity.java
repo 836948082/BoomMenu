@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.runtai.boomlibrary.BoomMenuButton;
 import com.runtai.boomlibrary.Types.BoomType;
@@ -19,7 +20,7 @@ import com.runtai.boomlibrary.Util;
 
 import java.util.Random;
 
-public class ShareActivity extends AppCompatActivity {
+public class ShareActivity extends AppCompatActivity implements BoomMenuButton.OnSubButtonClickListener {
 
     private boolean init = false;
     private BoomMenuButton boomMenuButton;
@@ -114,10 +115,11 @@ public class ShareActivity extends AppCompatActivity {
                 .place(getPlaceType())
                 .boomButtonShadow(Util.getInstance().dp2px(2), Util.getInstance().dp2px(2))
                 .subButtonsShadow(Util.getInstance().dp2px(2), Util.getInstance().dp2px(2))
+                .onSubButtonClick(this)
                 .shareStyle(3f, getRandomColor(), getRandomColor())
                 .init(boomMenuButton);
     }
-    
+
     private void initViews() {
         boomMenuButton = (BoomMenuButton)findViewById(R.id.boom);
 
@@ -285,5 +287,16 @@ public class ShareActivity extends AppCompatActivity {
         Random random = new Random();
         int p = random.nextInt(Colors.length);
         return Color.parseColor(Colors[p]);
+    }
+
+    /**
+     * 控件点击事件
+     * @param buttonIndex
+     */
+    @Override
+    public void onClick(int buttonIndex) {
+        Toast.makeText(this, "On click " +
+                boomMenuButton.getTextViews()[buttonIndex].getText().toString() +
+                " button", Toast.LENGTH_SHORT).show();
     }
 }

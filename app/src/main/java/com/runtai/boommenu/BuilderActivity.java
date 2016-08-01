@@ -1,11 +1,14 @@
 package com.runtai.boommenu;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.runtai.boomlibrary.BoomMenuButton;
 import com.runtai.boomlibrary.Eases.EaseType;
@@ -89,9 +92,22 @@ public class BuilderActivity extends AppCompatActivity {
                 .boomButtonShadow(Util.getInstance().dp2px(2), Util.getInstance().dp2px(2))
                 .subButtonsShadow(Util.getInstance().dp2px(2), Util.getInstance().dp2px(2))
                 .subButtonTextColor(Color.BLACK)
-                .onBoomButtonBlick(null)
+                .onBoomButtonBlick(null)//该控件监听
                 .animator(null)
-                .onSubButtonClick(null)
+                .onSubButtonClick(new BoomMenuButton.OnSubButtonClickListener() {
+                    @Override
+                    public void onClick(int buttonIndex) {
+                        if (buttonIndex == 0) {
+                            Toast.makeText(BuilderActivity.this, "Boom!", Toast.LENGTH_SHORT).show();
+                        } else if (buttonIndex == 1) {
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(
+                                    "https://github.com/Nightonke/BoomMenu")));
+                        } else if (buttonIndex == 2) {
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(
+                                    "https://github.com/Nightonke")));
+                        }
+                    }
+                })//该控件的子控件监听
                 // this only work when the place type is SHARE_X_X
                 .shareStyle(0, 0, 0)
                 .init(boomMenuButton);
