@@ -2,22 +2,21 @@
 
 是否觉得这种菜单按钮有点无聊？
 
-![Old Menu Buttons](https://github.com/Nightonke/BoomMenu/raw/master/Pictures/old_action_bar_menu.png)
+![Old Menu Buttons](https://github.com/836948082/BoomMenu/blob/master/image/old_action_bar_menu.png)
 
 要不，试试这个：
 
-![Circle](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/show_circle.gif?raw=true)
-![Ham](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/show_ham.gif?raw=true)
+![Circle](https://github.com/836948082/BoomMenu/blob/master/image/show_circle.gif)
+![Ham](https://github.com/836948082/BoomMenu/blob/master/image/show_ham.gif)
 
-![List](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/show_list.gif?raw=true)
-![Share](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/show_share.gif?raw=true)
+![List](https://github.com/836948082/BoomMenu/blob/master/image/show_list.gif)
+![Share](https://github.com/836948082/BoomMenu/blob/master/image/show_share.gif)
 
 BoomMenu可以让你的菜单按钮 ... 瞬间爆炸！
 
 # 目录
 
-[English Version](https://github.com/Nightonke/BoomMenu)  
-[Gradle & Maven](https://github.com/Nightonke/BoomMenu/blob/master/README-ZH.md#gradle-and-maven)  
+[Gradle & Maven](https://github.com/Nightonke/BoomMenu/blob/master/README-ZH.md#gradle-and-maven)
 [Note](https://github.com/Nightonke/BoomMenu/blob/master/README-ZH.md#note)  
 [Demo](https://github.com/Nightonke/BoomMenu/blob/master/README-ZH.md#demo)  
 
@@ -363,9 +362,9 @@ setBoomType(newBoomType);
 
 ### Place Types
 当前版本有32种对子按钮的排列方式。你可以使用 ```PlaceType.CIRCLE_X_X``` 和```PlaceType.HAM_X_X``` （前一个X代表子按钮数量，后一个代表排列方式）来初始化BMB。  
-![PlayType 1~8](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/place_type_1.png)  
-![PlayType 9~16](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/place_type_2.png)  
-![PlayType 25~32](https://github.com/Nightonke/BoomMenu/blob/master/Pictures/place_type_3.png)
+![PlayType 1~8](https://github.com/836948082/BoomMenu/blob/master/image/place_type_1.png)
+![PlayType 9~16](https://github.com/836948082/BoomMenu/blob/master/image/place_type_2.png)
+![PlayType 25~32](https://github.com/836948082/BoomMenu/blob/master/image/place_type_3.png)
 更多信息请查看 [PlaceType.class](https://github.com/Nightonke/BoomMenu/blob/master/boommenu/src/main/java/com/nightonke/boommenu/Types/PlaceType.java)
 
 ### Ease Types
