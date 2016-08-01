@@ -1,1 +1,1 @@
-[中文文档](https://github.com/Nightonke/BoomMenu/blob/master/README-ZH.md)
+[中文文档](https://github.com/836948082/BoomMenu/blob/master/README-ZH.md)
