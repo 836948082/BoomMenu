@@ -365,7 +365,6 @@ setBoomType(newBoomType);
 ![PlayType 1~8](https://github.com/836948082/BoomMenu/blob/master/image/place_type_1.png)
 ![PlayType 9~16](https://github.com/836948082/BoomMenu/blob/master/image/place_type_2.png)
 ![PlayType 25~32](https://github.com/836948082/BoomMenu/blob/master/image/place_type_3.png)
-更多信息请查看 [PlaceType.class](https://github.com/Nightonke/BoomMenu/blob/master/boommenu/src/main/java/com/nightonke/boommenu/Types/PlaceType.java)
 
 ### Ease Types
 对6种展开或隐藏的子动画有30种缓动函数可以使用。你可以设置移动、缩放、旋转动画的缓动效果当初始化BMB的时候，如果设置为null则表明使用默认值。当然，也可以通过setter来设置：
